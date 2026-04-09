@@ -1,5 +1,5 @@
-# CLAUDE.md — real-estate-claude-agent
-> Persistent memory for every Claude Code session in this project.
+# Agent.md — real-estate-agent
+> Persistent memory for every Agent Code session in this project.
 > Author: SNTL84 | Milind Soni | desidevloper.com
 
 ---
