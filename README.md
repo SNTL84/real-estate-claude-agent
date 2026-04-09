@@ -1,7 +1,7 @@
 # 🏠 real-estate-agent
 
 > **AI-powered property valuation & investment analysis for Surat, Gujarat**
-> Built with Claude Code 4-Layer Architecture | SNTL84 Framework
+> Built with Code 4-Layer Architecture | SNTL84 Framework
 
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue)](https://typescriptlang.org)
 [![Claude](https://img.shields.io/badge/Claude-Sonnet-orange)](https://anthropic.com)
