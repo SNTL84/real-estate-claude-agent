@@ -1,0 +1,33 @@
+{
+  "name": "real-estate-claude-agent",
+  "version": "1.0.0",
+  "description": "AI-powered property valuation for Surat, Gujarat — SNTL84 Framework",
+  "author": "Milind Soni (SNTL84) <sonymilind@yahoo.co.in>",
+  "homepage": "https://desidevloper.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SNTL84/real-estate-claude-agent"
+  },
+  "scripts": {
+    "dev": "ts-node-dev src/agent.ts",
+    "build": "tsc",
+    "agent": "ts-node src/agent.ts",
+    "test": "jest --coverage",
+    "lint": "eslint src/**/*.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "jest": "^29.0.0",
+    "ts-jest": "^29.0.0",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.4.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

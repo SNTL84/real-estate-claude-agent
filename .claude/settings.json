@@ -1,0 +1,45 @@
+{
+  "permissions": {
+    "allow": [
+      "Read:*",
+      "Bash:npm run*",
+      "Bash:node dist/*",
+      "Bash:git add*",
+      "Bash:git commit*",
+      "Bash:git push*",
+      "Bash:git status",
+      "Bash:git log*"
+    ],
+    "deny": [
+      "Bash:rm -rf*",
+      "Bash:sudo*",
+      "Read:.env"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash|fetchMarketData|runValuation|generateReport",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "hooks/pre-tool-use.sh",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "hooks/post-tool-use.sh",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}
